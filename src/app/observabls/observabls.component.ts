@@ -53,4 +53,30 @@ export class ObservablsComponent implements OnInit {
     })
   }
 
+
+  // this._authService.login(this.loginForm.value)
+  // .pipe(
+  //   switchMap((token: Tokens) => {
+  //     return forkJoin({
+  //       companyBranchList: this.getCompanyBranchList(token),
+  //       userProfile: this.getUserProfile(token)
+  //     }).pipe(map((joinRes) => { return { ...joinRes, token } }));
+  //   }),
+  //   takeUntil(this.destroy$))
+  // .subscribe({
+  //   next: (result: LoginRes) => {
+  //     if (result.companyBranchList.length == 1) {
+  //       this.setUserLoggedIn(result.token, result.companyBranchList[0].id);
+  //     } else {
+  //       // some code
+  //     }
+  //   },
+  //   error: (error: any) => {
+  //     // Set login flag to false and log error to console
+  //     this.isLoggingIn = false;
+  //     console.log(error)
+  //   }
+  // })
+
+  //Add catch error also
 }
