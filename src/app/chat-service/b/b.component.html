@@ -1,0 +1,13 @@
+<div>
+    <input type="text" [(ngModel)]="message" placeholder="Enter message" />
+    <button (click)="sendMessage('a')">Send to A</button>
+    <button (click)="sendMessage('b')">Send to B</button>
+    <button (click)="sendMessage('c')">Send to C</button>
+    <button (click)="sendMessage('broadcast')">Broadcast</button>
+</div>
+<div>
+    <h2>Received Messages in B</h2>
+    <ul>
+        <li *ngFor="let msg of messages">{{ msg }}</li>
+    </ul>
+</div>

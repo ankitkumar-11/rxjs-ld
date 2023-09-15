@@ -12,6 +12,7 @@ export class ObservablsComponent implements OnInit {
   data$ = new Observable((subscriber) => {
     subscriber.next(1);
     subscriber.next(2);
+    subscriber.error('Error occured.');
     subscriber.next(3);
     setTimeout(() => {
       subscriber.next(4);
