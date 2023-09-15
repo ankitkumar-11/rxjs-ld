@@ -13,6 +13,10 @@ import { ChatServiceComponent } from './chat-service/chat-service.component';
 import { AComponent } from './chat-service/a/a.component';
 import { BComponent } from './chat-service/b/b.component';
 import { CComponent } from './chat-service/c/c.component';
+import { HotColdObsComponent } from './hot-cold-obs/hot-cold-obs.component';
+import { XComponent } from './x/x.component';
+import { YComponent } from './y/y.component';
+import { OpertorsComponent } from './opertors/opertors.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { CComponent } from './chat-service/c/c.component';
     ChatServiceComponent,
     AComponent,
     BComponent,
-    CComponent
+    CComponent,
+    HotColdObsComponent,
+    XComponent,
+    YComponent,
+    OpertorsComponent
   ],
   imports: [
     BrowserModule,

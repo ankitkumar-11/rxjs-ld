@@ -9,15 +9,18 @@ export class HelloTextComponent implements OnInit {
 
   name: string;
 
-  constructor(private _subService: SubjectsService){}
+  constructor(private _subService: SubjectsService) { }
 
   ngOnInit() {
     this._subService.stringSubject.subscribe(
-      data => 
-      {
+      data => {
         console.log('next subscribed value: ' + data);
         this.name = data;
       }
     );
+
+    this._subService.dataCache$.subscribe(res => {
+      console.log("data form cache:", res)
+    })
   }
 }
