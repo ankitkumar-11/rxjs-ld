@@ -17,6 +17,9 @@ import { HotColdObsComponent } from './hot-cold-obs/hot-cold-obs.component';
 import { XComponent } from './x/x.component';
 import { YComponent } from './y/y.component';
 import { OpertorsComponent } from './opertors/opertors.component';
+import { CallbackHellComponent } from './callback-hell/callback-hell.component';
+import { MapComponent } from './map/map.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { OpertorsComponent } from './opertors/opertors.component';
     HotColdObsComponent,
     XComponent,
     YComponent,
-    OpertorsComponent
+    OpertorsComponent,
+    CallbackHellComponent,
+    MapComponent,
+    ForkJoinComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,9 @@ import { HotColdObsComponent } from './hot-cold-obs/hot-cold-obs.component';
 import { XComponent } from './x/x.component';
 import { YComponent } from './y/y.component';
 import { OpertorsComponent } from './opertors/opertors.component';
+import { CallbackHellComponent } from './callback-hell/callback-hell.component';
+import { MapComponent } from './map/map.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 
 const routes: Routes = [
 
@@ -37,6 +40,18 @@ const routes: Routes = [
   {
     path: 'opeartors',
     component: OpertorsComponent
+  },
+  {
+    path: 'callback',
+    component: CallbackHellComponent
+  },
+  {
+    path: 'map',
+    component: MapComponent
+  },
+  {
+    path: 'join',
+    component: ForkJoinComponent
   }
 ];
 

@@ -23,6 +23,10 @@ export class OpertorsComponent implements OnInit {
   constructor(private _dataService: DataService) {
   }
 
+  ngOnInit(){
+    
+  }
+
 
   //  debounce debounceTime distinct distinctUntilChanged switchMap
   // ngOnInit(): void {
