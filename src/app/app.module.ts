@@ -20,6 +20,8 @@ import { OpertorsComponent } from './opertors/opertors.component';
 import { CallbackHellComponent } from './callback-hell/callback-hell.component';
 import { MapComponent } from './map/map.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
+import { SchedulerComponent } from './scheduler/scheduler.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ForkJoinComponent } from './fork-join/fork-join.component';
     OpertorsComponent,
     CallbackHellComponent,
     MapComponent,
-    ForkJoinComponent
+    ForkJoinComponent,
+    SchedulerComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,

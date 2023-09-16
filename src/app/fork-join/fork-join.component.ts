@@ -12,16 +12,13 @@ import { asapScheduler, scheduled } from 'rxjs';
 })
 export class ForkJoinComponent implements OnInit {
 
-  currentWeather: any;
-  forecastWeather: any;
-
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadWeatherData();
+    this.pokemonData();
   }
 
-  loadWeatherData() {
+  pokemonData() {
     const pokemon1$ = this.http.get('https://pokeapi.co/api/v2/pokemon/pikachu');
     const pokemon2$ = this.http.get('https://pokeapi.co/api/v2/pokemon/ditto');
 

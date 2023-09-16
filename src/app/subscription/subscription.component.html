@@ -1,0 +1,10 @@
+
+<button (click)="getPikachu()">Pikachu</button>
+<button (click)="getDittio()">Dittio</button>
+
+<div *ngIf="PokemonData && !isLoading">
+    {{PokemonData.name}}
+</div>
+<div *ngIf="isLoading">
+   Loading......
+</div>

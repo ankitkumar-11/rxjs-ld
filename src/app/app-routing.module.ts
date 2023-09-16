@@ -10,6 +10,7 @@ import { OpertorsComponent } from './opertors/opertors.component';
 import { CallbackHellComponent } from './callback-hell/callback-hell.component';
 import { MapComponent } from './map/map.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 const routes: Routes = [
 
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'join',
     component: ForkJoinComponent
+  },
+  {
+    path:'sub',
+    component:SubscriptionComponent
   }
 ];
 
